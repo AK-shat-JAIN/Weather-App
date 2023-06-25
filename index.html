@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <title>Weather Now</title>
+
+    <script src="https://kit.fontawesome.com/befdf50858.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="top">
+        <h1 class="head">WEATHER NOW</h1>
+    </div>
+    
+    <div class="main">
+        <div class="inpcontainer">
+            <input type="search" id="input" placeholder="City Name / Lattitude,Longitude / US Zip / IP address"> 
+            <p id="err" style="color: red; text-align: right;"></p>
+        </div>
+        <div class="subtcontainer">
+            <div>
+                <p>Search with : </p>
+                <p>City Name / Lattitude,Longitude / US Zip / IP address</p>
+            </div>
+            <div class="subtn">
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="resultcard">
+        <div class="locdate">
+            <h2 id="loc"></h2>
+            <p>Date and Time: </p>
+            <p id="date"></p>
+        </div>
+        <div class="result">
+            <h1 id="res"></h1>
+            <img id="img" src="" alt="Weather Icon">
+        </div>
+        <div class="additional">
+            <h2 id="temp"></h2>
+            <div class="info">
+                <ul>
+                    <li class="topic"><i class="fa-solid fa-wind"></i>Wind Speed:</li>
+                    <li class="topic"><i class="fa-solid fa-umbrella"></i>Precipitate:</li>
+                    <li class="topic"><i class="fa-solid fa-droplet"></i>Humidity:</li>
+                </ul>
+                <ul>
+                    <li id="windmph"></li>
+                    <li id="precipmm"></li>
+                    <li id="humidity"></li>
+                </ul>
+                <ul>
+                    <li id="windkph"></li>
+                    <li id="precipin"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"> Made by Akshat Jain with ❤️</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
