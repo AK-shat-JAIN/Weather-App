@@ -241,7 +241,8 @@ i{
 }
 @media screen and (max-width: 425px) {
     body{
-        height: 95vh;
+        background-color: red;
+        height: 85vh;
     }
     .top{
         font-size: 0.9em;
@@ -253,14 +254,14 @@ i{
     }
     #input{
         height: 30px;
-        font-size: 0.85em;
+        font-size: 0.73em;
     }
     #err{
         font-size: 0.85em;
     }
     .subtcontainer{
         flex-direction: column;
-        font-size: 0.75em;
+        font-size: 0.65em;
     }
     #submit{
         margin: 10px;
