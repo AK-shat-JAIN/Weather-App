@@ -6,10 +6,9 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0 auto;
     padding: auto;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
-    font-weight: 100;
     background-color: #1F2729;
     color: white;
 }
