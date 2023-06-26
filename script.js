@@ -51,7 +51,7 @@ function displayResult(data){
     date.innerHTML = `${data.location.localtime}`;
     resultContainer.innerHTML = `${data.current.condition.text}`;
     imageContainer.src = `${data.current.condition.icon}`;
-    tempContainer.innerHTML = `${data.current.temp_c}&deg;C | ${data.current.temp_f}&deg;F`;
+    tempContainer.innerHTML = `${data.current.temp_c}&deg;C ${data.current.temp_f}&deg;F`;
     windMph.innerHTML = `${data.current.wind_mph}mph`;
     windKph.innerHTML = `${data.current.wind_kph}kph`;
     precipMm.innerHTML = `${data.current.precip_mm}mm`;

@@ -171,9 +171,6 @@ i{
 /* responsive */
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-    body{
-        background-color: green;
-    }
     #input{
         height: 45px;
         font-size: 1.3em;
@@ -229,21 +226,73 @@ i{
     }
     #temp{
         text-align: center;
-        width: 50%;
-        font-size: 3em;
+        width: 40%;
+        font-size: 2.7em;
     }
     i{
-        width: 15px;
-    }
-    .topic{
-        font-size: 0.7em;
+        width: 20px;
     }
     .info{
         gap: 5px;
+        font-size: 0.8em;
     }
 }
 @media screen and (max-width: 425px) {
-    body{
-        background-color: red;
+    .top{
+        font-size: 0.9em;
+        letter-spacing: 0.1em;
+    }
+    .main{
+        padding: 0px;
+        width: 85%;
+    }
+    #input{
+        height: 30px;
+        font-size: 0.7em;
+    }
+    #err{
+        font-size: 0.7em;
+    }
+    .subtcontainer{
+        flex-direction: column;
+        font-size: 0.6em;
+    }
+    #submit{
+        margin: 10px;
+        font-size: 1.5em;
+        width: 90%;
+        height: 30px;
+    }
+    #resultcard{
+        width: 90%;
+        border-radius: 5px;
+        padding: 10px 10px;
+    }
+    #loc{
+        font-size: 1.2em;
+    }
+    .datetime{
+        font-size: 0.7em;
+    }
+    .result{
+        gap: 0px;
+    }
+    #res{
+        font-size: 2em;
+    }
+    #img{
+        width: 80px;
+    }
+    #temp{
+        text-align: center;
+        width: 40%;
+        font-size: 2em;
+    }
+    i{
+        width: 20px;
+    }
+    .info{
+        gap: 5px;
+        font-size: 0.6em;
     }
 }
