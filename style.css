@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 body{
-    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
     background-color: #1F2729;
@@ -19,7 +21,7 @@ body{
     letter-spacing: 0.15em;
 }
 .head{
-    margin: 10px auto;
+    margin: 5px auto;
     text-align: center;
 }   
 
@@ -43,7 +45,7 @@ body{
 /* Main */
 
 .main{
-    padding: 50px;
+    padding: 10px 30px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -151,7 +153,6 @@ i{
 .topic{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
 }
 .info{
@@ -164,10 +165,8 @@ i{
 
 /* footer */
 .footer{
-    margin: auto;
-    position: absolute;
-    bottom: 0px;
     width: 100%;
     text-align: center;
     background-color: #525758;
 }
+
