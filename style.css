@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100dvh;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
     background-color: #1F2729;
     color: white;
@@ -275,7 +275,7 @@ i{
         font-size: 0.7em;
     }
     .result{
-        gap: 0px;
+        gap: 5px;
     }
     #res{
         font-size: 2em;
