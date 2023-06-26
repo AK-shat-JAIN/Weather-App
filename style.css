@@ -8,7 +8,6 @@
 body{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap-reverse;
     justify-content: space-between;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -243,6 +242,7 @@ i{
 @media screen and (max-width: 425px) {
     body{
         height: 90vh;
+        flex-wrap: wrap-reverse;
     }
     .top{
         font-size: 0.9em;
