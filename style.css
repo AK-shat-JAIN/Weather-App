@@ -241,8 +241,7 @@ i{
 }
 @media screen and (max-width: 425px) {
     body{
-        background-color: red;
-        height: 85vh;
+        height: 90vh;
     }
     .top{
         font-size: 0.9em;
