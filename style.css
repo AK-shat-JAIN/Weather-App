@@ -163,6 +163,8 @@ i{
 
 /* footer */
 .footer{
+    position: fixed;
+    bottom: 0px;
     width: 100%;
     text-align: center;
     background-color: #525758;
