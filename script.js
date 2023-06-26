@@ -1,3 +1,4 @@
+// Declaring variables
 const locationContainer = document.getElementById('input');
 const errorContainer = document.getElementById('err');
 const submitBtn = document.getElementById('submit');
@@ -16,7 +17,7 @@ const precipIn = document.getElementById('precipin');
 const humidity = document.getElementById('humidity');
 
 
-
+// Function to fetch Data
 async function getWeather(){
     if(locationContainer.value==""){
         valid.style.display = "none";
@@ -51,7 +52,7 @@ async function getWeather(){
 }
 submitBtn.addEventListener('click',getWeather);
 
-
+// Function to Display Data if successfully Fetched
 function displayResult(data){
     errorContainer.innerHTML="";
     valid.style.display = "flex";

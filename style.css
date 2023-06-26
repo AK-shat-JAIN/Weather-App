@@ -94,7 +94,7 @@ body{
     text-align: center;
 }
 
-/* Result */
+/* Result Card */
 
 #resultcard{
     margin: auto;
@@ -161,7 +161,7 @@ i{
     gap: 50px;
 }
 
-/* footer */
+/* Footer */
 .footer{
     position: fixed;
     bottom: 0px;
@@ -170,8 +170,8 @@ i{
     background-color: #525758;
 }
 
-/* responsive */
-
+/* Responsiveness */
+/* 768px < Screen Size < 1024px */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     #input{
         height: 45px;
@@ -199,6 +199,7 @@ i{
         gap: 30px;
     }
 }
+/* 425px < Screen Size < 768px */
 @media screen and (max-width: 768px) and (min-width: 425px) {
     .top{
         font-size: 1.3em;
@@ -239,6 +240,7 @@ i{
         font-size: 0.8em;
     }
 }
+/* Screen Size < 425px */
 @media screen and (max-width: 425px) {
     body{
         height: 90vh;
