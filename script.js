@@ -25,19 +25,28 @@ async function getWeather(){
     }
     try {
         let response = await fetch(`https://api.weatherapi.com/v1/current.json?key=0b7781455a2d4c58b0a230926232406&q=${locationContainer.value}`);
+        if(response.status==400){
+            throw new Error("Location Not Found");
+        }
+        else if(response.status==401 || response.status==403){
+            throw new Error("Data Can Not Fetch");
+        }
+        else if(response.status==404){
+            throw new Error("Page Not Found");
+        }
+        else if(response.status==500){
+            throw new Error("Server Error");
+        }
+        else if(!response.ok){
+            throw new Error("Internet Connection Break");
+        }
+        
         let data = await response.json();
-
-        console.log(data)
-        if(Object.entries(data).length==1){
-            throw ("Not found");
-        }
-        else{
-            displayResult(data);
-        }
+        displayResult(data);
     } 
     catch (error) {
         valid.style.display = "none";
-        errorContainer.innerHTML = "Location Not Found";
+        errorContainer.innerHTML = error;
     }
 }
 submitBtn.addEventListener('click',getWeather);
