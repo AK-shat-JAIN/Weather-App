@@ -9,7 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 100dvh;
     font-family: 'Poppins', sans-serif;
     background-color: #1F2729;
     color: white;
@@ -169,4 +169,3 @@ i{
     text-align: center;
     background-color: #525758;
 }
-
